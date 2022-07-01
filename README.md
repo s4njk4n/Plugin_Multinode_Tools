@@ -2,4 +2,4 @@
 Tools for managing multiple Plugin nodes
 
 
-In development. Check back soon.
+In development.
