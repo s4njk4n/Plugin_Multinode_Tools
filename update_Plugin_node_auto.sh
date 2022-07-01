@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set filename to obtain IP address list for StorX Node VPS's to Update
+# Set filename to obtain IP address list for Plugin Node VPS's to Update
 FILE="ipaddresses"
 
 # Set Colour Vars
