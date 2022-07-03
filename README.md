@@ -19,20 +19,20 @@ Also, please do not be afraid of any jargon. The process of using the scripts wi
 
 _set_Plugin_SSH_auth.sh_
 
-This script streamlines the process of setting up SSH key-based authentication. VPS usernames and IP addresses are read from the "useratip" text
+This script streamlines the process of setting up SSH key-based authentication. VPS usernames and IP addresses are read from the "user_at_ip" text
 file that you will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication
 set up in order to use the actual "updating" scripts we're going to use.
 
 
 _update_Plugin_node_auto.sh_
 
-This script sequentially updates EVERY node listed in the "useratip" text file that you will setup below. SSH key-based authentication needs to be
+This script sequentially updates EVERY node listed in the "user_at_ip" text file that you will setup below. SSH key-based authentication needs to be
 already setup in order for this script to be useful.
 
 
 _check_Plugin_node_statuses.sh_
 
-This script will sequentially check and display the status of EVERY node listed in the "useratip" text file that you will setup below. SSH key-based
+This script will sequentially check and display the status of EVERY node listed in the "user_at_ip" text file that you will setup below. SSH key-based
 authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down in your terminal
 window to see the current status that each node is showing.
 
@@ -72,12 +72,12 @@ window to see the current status that each node is showing.
 4. Make sure to press ENTER after pasting the above code into the terminal
 
 
-#### CUSTOMISE THE "useratip" FILE
+#### CUSTOMISE THE "user_at_ip" FILE
 
-1. Open the "useratip" file in nano:
+1. Open the "user_at_ip" file in nano:
 
 ```
-    nano ~/Plugin_Multinode_Tools/useratip
+    nano ~/Plugin_Multinode_Tools/user_at_ip
 ```
 
 2. When adding VPS details to this file, EACH VPS will have its details on a separate line. On EACH LINE you will need to enter 3 things relevant to
@@ -100,7 +100,7 @@ window to see the current status that each node is showing.
 
 #### SETUP SSH KEY-BASED AUTHENTICATION
 
-(Note: You must have setup the "useratip" file in the above section first)
+(Note: You must have setup the "user_at_ip" file in the above section first)
 
 
 ##### GENERATE SSH KEYS 
@@ -159,8 +159,8 @@ If you have already generated SSH keys earlier (if you're also using and have al
 
 ### TO CHECK THE STATUS OF ALL YOUR NODES
 
-1. This script will query and show the status of every node VPS listed in the "useratip" file you setup earlier above. If not done yet, you will
-   need to setup the "useratip" file as per the instructions above first.
+1. This script will query and show the status of every node VPS listed in the "user_at_ip" file you setup earlier above. If not done yet, you will
+   need to setup the "user_at_ip" file as per the instructions above first.
 
 2. Run the script to check your nodes:
 
