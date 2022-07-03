@@ -61,13 +61,15 @@ window to see the current status that each node is showing.
     sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git ssh && sudo apt autoremove -y
 ```
 
-3. Clone the scripts repository:
+3. Clone the scripts repository (Note: Preserves any preexisting user_at_ip file in local git repo):
 
 ```
     cd $HOME
+    mv Plugin_Multinode_Tools/user_at_ip . > /dev/null 2>&1
     sudo rm -r Plugin_Multinode_Tools > /dev/null 2>&1
     git clone https://github.com/s4njk4n/Plugin_Multinode_Tools.git
     cd Plugin_Multinode_Tools
+    mv ~/user_at_ip . > /dev/null 2>&1
     chmod +x *.sh
 ```
 4. Make sure to press ENTER after pasting the above code into the terminal
