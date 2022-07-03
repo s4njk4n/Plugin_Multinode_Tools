@@ -65,7 +65,7 @@ window to see the current status that each node is showing.
 
 ```
     cd $HOME
-    rm -r Plugin_Multinode_Tools
+    sudo rm -r Plugin_Multinode_Tools
     git clone https://github.com/s4njk4n/Plugin_Multinode_Tools.git
     cd Plugin_Multinode_Tools
     chmod +x *.sh
