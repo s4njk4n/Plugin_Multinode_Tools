@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set filename to obtain IP address list for Plugin Node VPS's to setup wth SSH-key authentication
-FILE="useratip"
+FILE="user_at_ip"
 
 # Set Colour Vars
 GREEN='\033[0;32m'
