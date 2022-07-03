@@ -64,7 +64,8 @@ window to see the current status that each node is showing.
 3. Clone the scripts repository:
 
 ```
-    cd $HOME    
+    cd $HOME
+    rm -r Plugin_Multinode_Tools
     git clone https://github.com/s4njk4n/Plugin_Multinode_Tools.git
     cd Plugin_Multinode_Tools
     chmod +x *.sh
