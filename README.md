@@ -85,10 +85,15 @@ window to see the current status that each node is showing.
 
 2. When adding VPS details to this file, EACH VPS will have its details on a separate line. On EACH LINE you will need to enter 3 things relevant to
    the VPS in question (with no spaces between the items). These are:
+   
    a) The new username that was created to install your Plugin node on the VPS;
+   
    b) The @ symbol;
+   
    c) The IP address of the VPS that this line of the file is referring to.
+   
    For example: username@123.456.789.110
+   
    There should be NO SPACES at the start or end of each line. Press ENTER at the end of each line after you finishing entering the last digit of the
    IP address. The exception to this is that when you have entered the FINAL IP address you will not press ENTER to create a new line.
 
