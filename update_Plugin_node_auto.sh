@@ -34,7 +34,7 @@ read WAITTOREBOOT
 
 echo
 echo
-echo -e "${GREEN}Generating plain IP address list for root users ${NC}"
+echo -e "${GREEN}Generating plain IP address list ${NC}"
 rm $IPFILE > /dev/null 2>&1
 cut -d "@" -f 2 $BASEFILE > $IPFILE
 echo
