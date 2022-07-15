@@ -28,7 +28,7 @@ echo -e "${RED}For each VPS you will be asked to enter the passwords for: ${NC}"
 echo -e "${RED} - the ROOT user for that VPS; and then ${NC}"
 echo -e "${RED} - also for the VPS username that the Plugin node was installed under ${NC}"
 echo
-echo -e "${RED}Your SSH-key will then be copied for both those users on the VPS. ${NC}"
+echo -e "${RED}Your SSH-key will then be copied to both those users on the VPS. ${NC}"
 echo
 echo -e "${GREEN}Press any key to commence... ${NC}"
 read -p " "
