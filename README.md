@@ -21,7 +21,7 @@ _set_Plugin_SSH_auth.sh_
 
 This script streamlines the process of setting up SSH key-based authentication. VPS usernames and IP addresses are read from the "user_at_ip" text
 file that you will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication
-set up in order to use the actual "updating" scripts we're going to use.
+set up in order to use the actual "updating" script we're going to use.
 
 
 _update_Plugin_node_auto.sh_
