@@ -117,7 +117,8 @@ command shown here:
 
 ##### GENERATE SSH KEYS 
 
-If you have already generated SSH keys earlier (if you're also using and have already installed the StorX Multinode Tools for example), please skip this key-generation step and proceed directly to the next section below with the heading "Register SSH Keys On Nodes"
+If you have already generated SSH keys earlier (eg. if you're also using and have already installed the StorX Multinode Tools), please skip this
+key-generation step and proceed directly to the next section below with the heading "Register SSH Keys On Nodes"
 
 1. Create your SSH keys that will be used for authentication:
 
