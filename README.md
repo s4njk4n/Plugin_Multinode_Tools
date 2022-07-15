@@ -98,8 +98,8 @@ command shown here in Step 2):
    
    For example: username@123.456.789.110
    
-   There should be NO SPACES at the start or end of each line. Press ENTER at the end of each line after you finishing entering the last digit of the
-   IP address. The exception to this is that when you have entered the FINAL IP address you will not press ENTER to create a new line.
+   Press ENTER at the end of each line after you finishing entering the last digit of the IP address. The exception to this is that when you have
+   entered the FINAL IP address you will not press ENTER to create a new line.
 
 3. Once the details of all the node VPS's have been entered, we need to exit nano and save the file:
 
