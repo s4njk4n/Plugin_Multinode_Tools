@@ -58,8 +58,8 @@ window to see the current status that each node is showing.
 
 2. Update the system and install base packages. (Note: You need to run a sudo command of any type before doing Step 3 below or you will find that the
 Step 3 process will exit early before cloning the git repo to your local drive. Doesn't really matter which command you sudo. The simplest and most
-useful sudo command to run is a quick update of the OS and ensuring the base packages you will need are installed. You can do this by running the
-command shown here in Step 2):
+useful sudo command to run is a quick update of the OS and ensuring the base packages you will need are installed). You can do this by running the
+command shown here:
 
 ```
     sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git ssh && sudo apt autoremove -y
