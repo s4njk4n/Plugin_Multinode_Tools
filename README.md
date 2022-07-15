@@ -55,7 +55,10 @@ window to see the current status that each node is showing.
 1. Logon to (or access the terminal on) the computer you will be using for administering your Plugin nodes. You will need to be at the command prompt
    in the terminal in order to perform the following steps.
 
-2. Update the system and install base packages:
+2. Update the system and install base packages. (Note: You need to run a sudo command of any type before doing Step 3 below or you will find that the
+Step 3 process will exit early before cloning the git repo to your local drive. Doesn't really matter which command you sudo. The simplest and most
+useful sudo command to run is a quick update of the OS and ensuring the base packages you will need are installed. You can do this by running the
+command shown here in Step 2):
 
 ```
     sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git ssh && sudo apt autoremove -y
