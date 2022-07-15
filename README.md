@@ -40,9 +40,10 @@ window to see the current status that each node is showing.
 
 ### ITEMS TO NOTE
 
-* These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be
-  installed on (eg. laptop, desktop, virtual machine, VPS). If you are using the StorX Multinode Tools as well, then these scripts can all be installed
-  on the same computer
+* You will need a computer (running Ubuntu 20.04) that these scripts will be installed on (eg. laptop, desktop, virtual machine, VPS). If you are using
+  the StorX Multinode Tools as well, then these scripts can all be installed on the same computer. 
+* If you install them on a VPS, please ensure that the VPS host allows outgoing ssh (ie outgoing connections on port 22 are allowed). Some VPS providers
+  block outgoing ssh initially and you have to then specifically unblock it in their control panel.
 * The computer you setup for these updates should be one YOU control and only YOU have access to. Using SSH key-based authentication means that this
   administration computer can connect to your nodes whenever it needs to without needing you to manually enter the password for the node VPS. This is
   by design and is how the scripts manage to run multiple commands to update each node whilst remaining unattended. As you can see, this computer must
