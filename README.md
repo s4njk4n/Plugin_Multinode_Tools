@@ -4,8 +4,8 @@
 
 As per Plugin, it is important to ensure that a node's VPS OS is up to date. 
 
-Keeping several nodes up to date takes time, especially if you have multiple nodes and are dealing with them all one-by-one. These scripts are designed
-to automate and streamline the process so we can manage larger groups of nodes in an easier and more time-efficient manner.
+Keeping nodes up to date takes time, especially if you have multiple nodes and are dealing with them all one-by-one. These scripts are designed to
+automate and streamline the process so we can manage larger groups of nodes in an easier and more time-efficient manner.
 
 These tools have been created for the use of myself and a few others. If you plan to use them, please take some time to read through the scripts and
 understand them.
