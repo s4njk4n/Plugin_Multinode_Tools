@@ -31,9 +31,9 @@ echo -e "${RED}than the boot time of your SLOWEST booting node). If unsure, set 
 echo -e "${RED}something long like 300(seconds). Setting a longer time isn't harmful, it will ${NC}"
 echo -e "${RED}just take longer to finish all the nodes.${NC}"
 read WAITTOREBOOT
+echo
+echo
 
-echo
-echo
 echo -e "${GREEN}Generating plain IP address list ${NC}"
 rm $IPFILE > /dev/null 2>&1
 cut -d "@" -f 2 $BASEFILE > $IPFILE
@@ -56,23 +56,23 @@ do
    ssh -n root@$f1 'sudo apt upgrade -y'
    ssh -n root@$f1 'sudo apt autoremove -y'
    ssh -n root@$f1 'sudo apt clean -y'
-
    echo
+
    echo -e "${GREEN}Rebooting VPS - $f2 ${NC}"
    
    ssh -n root@$f1 'reboot' > /dev/null 2>&1
    sleep $WAITTOREBOOT
+   echo
+   echo
 
-   echo
-   echo
    echo -e "${GREEN}Retrieving Status of Plugin Node - $f2 ${NC}"
    echo
    echo
    
    ssh -n $f2 'pm2 status'
-   
    echo
    echo
+
    echo -e "${GREEN}--------------------------------------------------------------- ${NC}"
    echo
 
