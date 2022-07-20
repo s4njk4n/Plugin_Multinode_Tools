@@ -188,7 +188,7 @@ key-generation step and proceed directly to the next section below with the head
 2. Run the script to retrieve your node backups:
 
 ```
-    cd ~/Plugin_Multinode_Tools && ./check_Plugin_node_statuses.sh
+    cd ~/Plugin_Multinode_Tools && ./retrieve_Plugin_node_backups_auto.sh
 ```
 
 3. When completed, you will be presented with the name of the directory that contains the reservoir of backup files you have just copied. The directory
