@@ -39,10 +39,10 @@ window to see the current status that each node is showing.
 
 _retrieve_Plugin_node_backups_auto.sh_
 
-For those who have already performed the "official Plugin backup process" for all their nodes, this script enables all of the backup files from each
-of ones nodes to be copied to a local reservoir on the computer that you are running these Multinode administration scripts from. SSH key-based
-authentication needs to be already setup in order for this script to be useful. Each time this script it run, it creates a new unique reservoir on
-the local machine (so it never overwrites any previous local backup reservoirs).
+For those who have already performed the "official Plugin backup process" for all their nodes, this script enables all of the backup files from all
+of ones nodes to be copied sequentially to a local reservoir on the computer that you are running these Multinode administration scripts from. SSH
+key-based authentication needs to be already setup in order for this script to be useful. Each time this script it run, it creates a new unique
+reservoir on the local machine (so it never overwrites any previous local backup reservoirs).
 
 ---
 
