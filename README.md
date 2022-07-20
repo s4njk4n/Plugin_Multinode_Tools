@@ -36,6 +36,14 @@ This script will sequentially check and display the status of EVERY node listed 
 authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down in your terminal
 window to see the current status that each node is showing.
 
+
+_retrieve_Plugin_node_backups_auto.sh_
+
+For those who have already performed the "official Plugin backup process" for all their nodes, this script enables all of the backup files from each
+of ones nodes to be copied to a local reservoir on the computer that you are running these Multinode administration scripts from. SSH key-based
+authentication needs to be already setup in order for this script to be useful. Each time this script it run, it creates a new unique reservoir on
+the local machine (so it never overwrites any previous local backup reservoirs).
+
 ---
 
 ### ITEMS TO NOTE
@@ -167,6 +175,24 @@ key-generation step and proceed directly to the next section below with the head
 
 4. Now sit back and wait. Feel free to watch the script work or go away and do something else until it is finished. Alternately if you have some
    ridiculous number of nodes then go away and leave your computer on until the updates are completed.
+
+---
+
+### TO COPY ALL BACKUP FILES FROM ALL YOUR NODES TO YOUR LOCAL MACHINE
+
+1. When you have previously performed the "official Plugin backup process" for each node, a series of backup files were created in the /plinode_backups/
+   directory on each node VPS. This script connects sequentially to each VPS listed in the "user_at_ip" file you setup earlier above and then copies
+   those existing official backup files to your a unique directory (within the user's HOME directory) on the machine you are running the Multinode tools
+   from. If not done yet, you will need to setup the "user_at_ip" file as per the instructions above first.
+
+2. Run the script to retrieve your node backups:
+
+```
+    cd ~/Plugin_Multinode_Tools && ./check_Plugin_node_statuses.sh
+```
+
+3. When completed, you will be presented with the name of the directory that contains the reservoir of backup files you have just copied. The directory
+   name contains the year, month, day, hour, minute and second (all separated by underscores)
 
 ---
 
