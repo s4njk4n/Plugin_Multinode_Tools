@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set filename to obtain IP address list for Plugin Node VPS's to setup wth SSH-key authentication
+# Set filename to obtain IP address list for Plugin Node VPS's to download backup files from
 FILE="user_at_ip"
 
 # Set unique directory name for this reservoir of node backup files
