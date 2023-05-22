@@ -173,8 +173,7 @@ key-generation step and proceed directly to the next section below with the head
    providers have reboot times that are VERY SLOOOOOOW. If you're not sure how long it takes for yours or if you want to be on the safe side then
    just pick something long like 300 seconds (ie. type 300 and press ENTER)
 
-4. Now sit back and wait. Feel free to watch the script work or go away and do something else until it is finished. Alternately if you have some
-   ridiculous number of nodes then go away and leave your computer on until the updates are completed.
+4. Now sit back and wait. Feel free to watch the script work or go away and do something else until it is finished.
 
 ---
 
