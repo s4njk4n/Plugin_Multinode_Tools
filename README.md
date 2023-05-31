@@ -44,6 +44,15 @@ of ones nodes to be copied sequentially to a local reservoir on the computer tha
 key-based authentication needs to be already setup in order for this script to be useful. Each time this script it run, it creates a new unique
 reservoir on the local machine (so it never overwrites any previous local backup reservoirs).
 
+
+_EXPERIMENTAL_Plugin_parallel_update_script.sh_
+
+WARNING: THIS IS AN EXPERIMENTAL SCRIPT. It updates the OS and reboots ALL of the node VPS's indicated in the "user_at_ip" file SIMULTANEOUSLY. This
+enables us to administer a large (or even potentially very large) collection of node VPS's in as little as 1-2 minutes. This script should only be
+used by advanced users who have a high level of Linux experience and also a high level of experience with Plugin nodes, thus giving them the
+capacity to troubleshoot. Please read the script and make sure you understand it before deploying on TEST nodes first. Do not deploy it in a
+production environment unless you are comfortable to do so!
+
 ---
 
 ### ITEMS TO NOTE
@@ -208,5 +217,25 @@ key-generation step and proceed directly to the next section below with the head
 
 3. Watch while the status of each node is shown sequentially in your terminal window, or alternately go away and come back later when it is finished.
    You will be able to scroll back up the terminal window later to review them all if there are too many to watch while they are checked one-by-one.
+
+---
+
+### EXPERIMENTAL SCRIPT FOR SIMULTANEOUS OS UPDATE AND REBOOT OF ALL PLUGIN NODES
+
+FOR ADVANCED USERS ONLY. THIS SCRIPT IS EXPERIMENTAL AND MAY NOT FUNCTION AS EXPECTED. DO NOT USE UNLESS YOU HAVE READ THE SCRIPT AND KNOW WHAT YOU
+ARE DOING. DOING PARALLEL VPS UPDATES INSTEAD OF SEQUENTIAL ALLOWS US TO UPDATE LARGE NUMBERS OF NODE VPS'S IN POTENTIALLY A COUPLE OF MINUTES. IF
+YOU DO NOT UNDERSTAND WHAT YOU ARE DOING, YOU CAN POTENTIALLY DISRUPT ALL YOUR NODES FROM FUNCTIONING IN MINUTES. BEWARE!!!!!
+
+1. Before deploying this script you will need to install pssh on the machine you are running the Plugin_Multinode_Tools from:
+```
+    sudo apt install pssh
+```
+2. This script updates the OS on all your VPS's and then reboots them all and then sequentially checks and displays the status of all of them.
+3. You must have completed setup of ssh key-based authentication (described above) in order to use this script effectively.
+4. To run the script:
+```
+    cd ~/Plugin_Multinode_Tools && ./EXPERIMENTAL_Plugin_parallel_update_script.sh
+```
+5. From reading the script, you will understand how this script works to update VPS's.
 
 ---
