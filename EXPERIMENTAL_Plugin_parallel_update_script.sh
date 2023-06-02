@@ -37,7 +37,7 @@ echo -e "${RED}wait for all updates and a reboot to complete on your SLOWEST VPS
 echo -e "${RED}need to work it out by trial and error. Selecting a time too short is not${NC}"
 echo -e "${RED}harmful. The final status checks may just not display a useful output.${NC}"
 echo -e "${RED}If unsure, set it to something long like 600(seconds). Setting a longer${NC}"
-echo -e "${RED}time isn't harmful, it will just take longer to finish all the nodes.${NC}"
+echo -e "${RED}time isn't harmful, it will just take longer to finish the update.${NC}"
 read WAITTOREBOOT
 echo
 echo
