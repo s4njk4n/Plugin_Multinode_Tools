@@ -29,16 +29,15 @@ echo
 
 # Set time (in seconds) to wait for your VPS to reboot. You'll have to manually test this. Recommend rounding UP by a minute or 2
 echo
-echo -e "${RED}How long (in seconds) should be allowed for VPS's to reboot? (Must be LONGER ${NC}"
-echo -e "${RED}than the boot time of your SLOWEST booting node). If unsure, set it to ${NC}"
-echo -e "${RED}something long like 300(seconds). Setting a longer time isn't harmful, it will ${NC}"
-echo -e "${RED}just take longer to finish all the nodes.${NC}"
+echo -e "${RED}How long (in seconds) should be allowed for VPS's to reboot?${NC}"
 echo
 echo -e "${RED}NOTE: If your VPS's take variable amounts of time to update and reboot${NC}"
 echo -e "${RED}then the time you want to specify here is the total number of seconds to${NC}"
-echo -e "${RED}wait for all updates and reboots to complete. You may need to work it out${NC}"
-echo -e "${RED}by trial and error. Selecting a time too soon is not harmful. Your${NC}"
-echo -e "${RED}pm2 status commands may just not run properly.${NC}"
+echo -e "${RED}wait for all updates and a reboot to complete on your SLOWEST VPS. You may${NC}"
+echo -e "${RED}need to work it out by trial and error. Selecting a time too short is not${NC}"
+echo -e "${RED}harmful. The final status checks may just not display a useful output.${NC}"
+echo -e "${RED}If unsure, set it to something long like 600(seconds). Setting a longer${NC}"
+echo -e "${RED}time isn't harmful, it will just take longer to finish all the nodes.${NC}"
 read WAITTOREBOOT
 echo
 echo
