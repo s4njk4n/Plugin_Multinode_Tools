@@ -18,7 +18,7 @@ echo
 echo -e "${RED}     #################################################### ${NC}"
 echo -e "${RED}     #                                                  # ${NC}"
 echo -e "${RED}     #          WARNING EXPERIMENTAL SCRIPT FOR         # ${NC}"
-echo -e "${RED}     #                 PARALLEL UPDATE OF               # ${NC}"
+echo -e "${RED}     #                PARALLEL OS UPDATE OF             # ${NC}"
 echo -e "${RED}     #                MULTIPLE PLUGIN NODES             # ${NC}"
 echo -e "${RED}     #                                                  # ${NC}"
 echo -e "${RED}     # Created by s4njk4n - https://github.com/s4njk4n/ # ${NC}"
